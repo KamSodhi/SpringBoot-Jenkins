@@ -1,4 +1,4 @@
-# SpringBoot-Jenkins
+# SpringBoot-Jenkins ~~
 
 Create 2 Ubuntu 20.04 instances on gcp with a public IP
 
