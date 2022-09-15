@@ -1,10 +1,10 @@
 pipeline {
 	agent any
 	environment {
-		appIP="";
-		gitRepo="";
-		repoName="";
-		databaseIP="";
+		appIP=34.142.111.199;
+		gitRepo=https://github.com/KamSodhi/SpringBoot-Jenkins.git;
+		repoName=SpringBoot-Jenkins;
+		databaseIP=34.171.15.78;
 	}
 	stages{
 		stage('Test Application'){
@@ -31,8 +31,8 @@ spring.h2.console.path=/h2
 
 spring.datasource.url=jdbc:mysql://$databaseIP:3306/tdl
 spring.datasource.data=classpath:data-dev.sql
-spring.datasource.username=<***your_database_username***>
-spring.datasource.password=<***your_database_password***>' > ./src/main/resources/application-dev.properties
+spring.datasource.username= root
+spring.datasource.password=1234ABCD./src/main/resources/application-dev.properties
 			mvn clean package
 			'''
 			}
