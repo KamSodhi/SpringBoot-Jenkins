@@ -65,7 +65,7 @@ echo '[Unit]
 Description=My SpringBoot App
 
 [Service]
-User=ubuntu
+User=jenkins
 Type=simple
 
 ExecStart=/home/jenkins/appservice/start.sh
