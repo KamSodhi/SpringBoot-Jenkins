@@ -1,10 +1,10 @@
 pipeline {
 	agent any
 	environment {
-		appIP=34.142.111.199;
-		gitRepo=https://github.com/KamSodhi/SpringBoot-Jenkins.git;
-		repoName=SpringBoot-Jenkins;
-		databaseIP=34.171.15.78;
+		appIP="34.142.111.199";
+		gitRepo="https://github.com/KamSodhi/SpringBoot-Jenkins.git";
+		repoName="SpringBoot-Jenkins";
+		databaseIP="34.171.15.78";
 	}
 	stages{
 		stage('Test Application'){
