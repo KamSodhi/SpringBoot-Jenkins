@@ -39,7 +39,7 @@ spring.datasource.password=1234ABCD' > ./src/main/resources/application-dev.prop
 		}
 		stage('Moving War'){
 			steps{
-			sh '''ssh -i "~/.ssh/jenkins_key" jenkins@$appIP	 << EOF
+			sh '''ssh -i "~/.ssh/jenkins_key" jenkins@$appIP << EOF
 			cd $repoName
 			mkdir -p /home/jenkins/Wars
 			mv ./target/*.war /home/jenkins/Wars/project_war.war
